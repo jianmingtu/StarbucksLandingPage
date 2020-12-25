@@ -136,7 +136,6 @@ header {
     position: absolute;
     top: 50%;
     right: 30px;
-    background-color: red;
 
     display: flex;
     justify-content: center;
@@ -150,6 +149,7 @@ header {
             display: inline-block;
             margin: 5px 0;
             transform: scale(0.6);
+            filter: invert(1);
         }
     }
 }

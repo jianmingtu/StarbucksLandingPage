@@ -152,7 +152,6 @@ header ul li a {
   position: absolute;
   top: 50%;
   right: 30px;
-  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,5 +174,7 @@ header ul li a {
   margin: 5px 0;
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 /*# sourceMappingURL=style.css.map */

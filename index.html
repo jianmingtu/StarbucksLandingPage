@@ -37,9 +37,27 @@
                 </div>
             </div>
             <ul class="thumb">
-                <li><img src="thumb1.png" alt="img" /></li>
-                <li><img src="thumb2.png" alt="img" /></li>
-                <li><img src="thumb3.png" alt="img" /></li>
+                <li>
+                    <img
+                        src="thumb1.png"
+                        alt="img"
+                        onclick="ImageSelect('img1.png')"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="thumb2.png"
+                        alt="img"
+                        onclick="ImageSelect('img2.png')"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="thumb3.png"
+                        alt="img"
+                        onclick="ImageSelect('img3.png')"
+                    />
+                </li>
             </ul>
             <ul class="sci">
                 <li>
@@ -53,5 +71,15 @@
                 </li>
             </ul>
         </section>
+
+        <script type="text/javascript">
+            function ImageSelect(imgSrc) {
+                document.querySelector(".starbucks").src = imgSrc;
+            }
+
+            function changeColor(color) {
+                document.querySelector(".circle").style.background = color;
+            }
+        </script>
     </body>
 </html>
